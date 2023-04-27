@@ -22,7 +22,28 @@ const getComputerSelection = () => {
 // Game Play
 
 const game = (user, puter) => {
-    if(user === puter);
+    if(user === 'rock') {
+        if(puter === 'paper') {
+            puterScore++;
+        }
+        else if(puter === 'scissors') {
+            userScore++;
+        };
+    } else if(user === 'paper') {
+        if(puter === 'rock') {
+            userScore++;
+        } else if(puter === 'scissors') {
+            puterScore++;
+        };
+    } else if(user === 'scissors') {
+        if(puter === 'rock') {
+            puterScore++;
+        } else if(puter === 'paper') {
+            userScore++;
+        }
+    };
+    playWindow(user, puter);
+};
 
 // Play Window
 
