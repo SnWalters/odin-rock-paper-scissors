@@ -1,0 +1,74 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #c0c0c0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#game-window {
+    background-color: #1f2937;
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 5px grey;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#selection {
+    background-color: #1f2937;
+    width: 80%;
+    height: 25%;
+    margin: 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 5px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rock {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #3882f6;
+    transform: rotate(45deg);
+}
+
+.rock:hover {
+    transform: rotate(-45deg);
+}
+
+#selection > * {
+    width: 65%;
+    height: 80%;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: 700;
+    font-size: 5rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 5px grey;
+}
+
+#selection > *:hover {
+    box-shadow: 0 0 5px 5px #c0c0c0;
+    cursor: pointer;
+    font-size: 5.1rem;
+}
