@@ -24,6 +24,18 @@ body {
     justify-content: center;
 }
 
+/* Font Color White */
+
+#game-window > p, .play-window, #selection > div, #selection > button {
+    color: #f9faf8;
+}
+
+/* Background Color Blue */
+
+#selection > div, #selection > button {
+    background-color: #3882f6;
+}
+
 #container {
     margin: 0 auto;
     padding: 20px 0;
@@ -49,7 +61,6 @@ body {
 
 #game-window > p {
     font-size: 2rem;
-    color: #f9faf8;
 }
 
 /* Play Window */
@@ -57,7 +68,6 @@ body {
 .play-window {
     width: 80%;
     height: 50%;
-    color: #f9faf8;
 }
 
 .play-window > div, .play-window > p {
@@ -92,8 +102,6 @@ body {
 #selection > div {
     width: 65%;
     height: 80%;
-    background-color: #3882f6;
-    color: #f9faf8;
     font-weight: 700;
     font-size: 5rem;
     border-radius: 25px;
@@ -115,8 +123,6 @@ body {
 #selection > button {
     width: 25%;
     height: 80%;
-    background-color: #3882f6;
-    color: #f9faf8;
     font-family: cursive;
     font-weight: 700;
     font-size: 300%;
