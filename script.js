@@ -1,5 +1,7 @@
 const selector = document.querySelector('#selection');
 const gameWindow = document.querySelector('#game-window');
+let userScore = 0;
+let puterScore = 0;
 
 // Computer Selection
 
@@ -19,11 +21,18 @@ const getComputerSelection = () => {
 
 // Game Play
 
+const game = (user, puter) => {
+    if(user === puter);
 
 // Play Window
 
 const playWindow = (user, puter) => {
     gameWindow.textContent = "";
+    const score = document.createElement('p');
+    score.classList.add('score')
+    score.textContent = `${userScore} / ${puterScore}`
+    gameWindow.appendChild(score);
+
     const playWin = document.createElement('div');
     playWin.classList.add('play-window');
 
