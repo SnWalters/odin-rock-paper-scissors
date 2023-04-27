@@ -28,9 +28,13 @@ const scissorsSelect = () => {
     selector.appendChild(button);
 }
 
-newGame.addEventListener('click', () => {
-    selector.textContent = "";
+const selectors = () => {
     rockSelect();
     paperSelect();
     scissorsSelect();
+}
+
+newGame.addEventListener('click', () => {
+    selector.textContent = "";
+    selectors();
 });
