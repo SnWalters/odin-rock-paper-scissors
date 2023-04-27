@@ -43,6 +43,10 @@ const game = (user, puter) => {
         }
     };
     playWindow(user, puter);
+
+    if(userScore === 5 || puterScore === 5) {
+        newGameButton();
+    };
 };
 
 // Play Window
@@ -51,7 +55,7 @@ const playWindow = (user, puter) => {
     gameWindow.textContent = "";
     const score = document.createElement('p');
     score.classList.add('score')
-    score.textContent = `${userScore} / ${puterScore}`
+    score.textContent = `Score: ${userScore} / ${puterScore}`
     gameWindow.appendChild(score);
 
     const playWin = document.createElement('div');
@@ -74,16 +78,21 @@ const playWindow = (user, puter) => {
 
 // New Game Button
 
-const newGameButton = () => {
-    const newGame = document.createElement('div');
-    newGame.classList.add('new-game');
-    newGame.textContent = "New Game";
-    selector.appendChild(newGame);
-    newGame.addEventListener('click', () => {
+const newGameClick = () => {
         selector.textContent = "";
         gameWindow.textContent = "";
         playWindow('User', 'Puter');
         selectors();
+};
+
+const newGameButton = () => {
+    const newGame = document.createElement('div');
+    newGame.classList.add('new-game');
+    newGame.textContent = "New Game";
+    selector.textContent = "";
+    selector.appendChild(newGame);
+    newGame.addEventListener('click', () => {
+        newGameClick();
     });
 }
 
