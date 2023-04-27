@@ -27,8 +27,14 @@ body {
     box-shadow: 0 2px 5px 5px grey;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+#game-window > p {
+    font-size: 2rem;
+    color: #f9faf8;
 }
 
 /* New Game Button */
