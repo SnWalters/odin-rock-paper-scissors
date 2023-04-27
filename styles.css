@@ -17,6 +17,8 @@ body {
     gap: 15px;
 }
 
+/* Game Window */
+
 #game-window {
     background-color: #1f2937;
     width: 80%;
@@ -28,6 +30,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* New Game Button */
 
 #selection {
     background-color: #1f2937;
@@ -61,7 +65,7 @@ body {
     font-size: 5.1rem;
 }
 
-/* selction buttons */
+/* Game Buttons */
 
 #selection > button {
     width: 25%;
