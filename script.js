@@ -1,5 +1,18 @@
-const newGame = document.querySelector('.new-game');
 const selector = document.querySelector('#selection');
+const gameWindow = document.querySelector('#game-window');
+
+// Game Window
+
+
+
+// New Game Button
+
+const newGame = document.createElement('div');
+newGame.classList.add('new-game');
+newGame.textContent = "New Game";
+selector.appendChild(newGame);
+
+// Game buttons
 
 const rockSelect = () => {
     const button = document.createElement('button');
